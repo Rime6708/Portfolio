@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rai Emir G. Mola - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <a href="index.html" class="nav-brand">Rai Emir<span>.</span></a>
+        <div class="nav-links">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero: Picture sa ITAAS, Pangalan sa IBABA -->
+        <header class="hero">
+            <div class="hero-avatar">
+                <div class="avatar-glow">
+                    <img src="images/me.jpg" alt="Photo of Rai Emir G. Mola" class="me">
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <span class="greeting">BSIT Student &bull; Aspiring Developer</span>
+                <h1>Rai Emir G. Mola</h1>
+                <p class="hero-bio">
+                    A first-year Bachelor of Science in Information Technology student at Notre Dame of Dadiangas University. Currently building foundational mastery in <strong>C++</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn" href="#contact">Get in touch</a>
+                    <a class="btn-secondary" href="about.html">More about me &rarr;</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Projects: 2-Column Grid -->
+        <section class="projects-section">
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 id="projects">My Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project">
+                    <div class="project-tag">C++ &bull; Algorithms</div>
+                    <h3>Matrix Addition and Subtraction</h3>
+                    <p>A C++ program that validates matrix dimensions up to 10&times;10 and performs element-wise addition and subtraction based on user input. Displays calculated sum and difference neatly side-by-side.</p>
+                    <div class="project-learning">
+                        <strong>Key Learnings:</strong> 2D array manipulation, nested iteration loops, and console formatting with <code>setw</code>.
+                    </div>
+                </article>
+
+                <article class="project">
+                    <div class="project-tag">C++ &bull; Data Processing</div>
+                    <h3>ABC Corporation Sales Report Program</h3>
+                    <p>A C++ program tracking monthly sales across five outlets using a 2D array, computing row/column totals for a comprehensive summary table, and evaluating top and bottom performers.</p>
+                    <div class="project-learning">
+                        <strong>Key Learnings:</strong> Multi-dimensional array aggregation, computing row/column sums, and min/max tracking logic.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-card">
+            <div class="contact-text">
+                <span class="section-tag">Let's Connect</span>
+                <h2>Get in Touch</h2>
+                <p>Have questions, academic collaboration opportunities, or just want to say hi? Feel free to reach out anytime!</p>
+            </div>
+            <div class="contact-action">
+                <p class="contact-email">Email: <a href="mailto:raiemirmola@gmail.com">raiemirmola@gmail.com</a></p>
+                <a class="btn" href="mailto:raiemirmola@gmail.com">Send an Email</a>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+                <p id="formMessage" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Rai Emir G. Mola. All rights reserved.</p>
+            <p class="footer-sub">Notre Dame of Dadiangas University &bull; BSIT</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
